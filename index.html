@@ -4,10 +4,10 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="Personal website">
-    <meta name="Jinchen Zhhu | EMT" content="">
+    <meta name="Jinchen Zhu | EMT" content="">
     <!-- link rel="icon" href="../../../../favicon.ico" -->
 
-    <title>Jinchen Zhhu | EMT</title>
+    <title>Jinchen Zhu | EMT</title>
 
     <!-- Bootstrap core CSS -->
     <link href="bootstrap/css/bootstrap.css" rel="stylesheet">
@@ -53,16 +53,87 @@
           <p class="text-justify">
             Recently, Transformer-based methods have achieved impressive results in single image super-resolution (SISR). However, the lack of locality mechanism and high complexity limit their application in the field of super-resolution (SR). To solve these problems, we propose a new method, Efficient Mixed Transformer (EMT) in this study. Specifically, we propose the Mixed Transformer Block (MTB), consisting of multiple consecutive transformer layers, in some of which the Pixel Mixer (PM) is used to replace the Self-Attention (SA). PM can enhance the local knowledge aggregation with pixel shifting operations. At the same time, no additional complexity is introduced as PM has no parameters and floating-point operations. Moreover, we employ striped window for SA (SWSA) to gain an efficient global dependency modelling by utilizing image anisotropy. Experimental results show that EMT outperforms the existing methods on benchmark dataset and achieved state-of-the-art performance.
           </p>
-        </div>
-        
-
         <p style="padding: 0.5rem;"></p>
-        <h3>Qualitative comparison</h3>
-        <div class="row">
-          <div class="col-sm-1"></div>
-          <div class="col-sm-10">
+        </div>
+        <div class="row align-items-center">
+            <div class="col-sm-3 text-center">
+                <h4>HR</h4>
+            </div>
+            <div class="col-sm-3 text-center">
+                <h4>SwinIR</h4>
+            </div>
+            <div class="col-sm-3 text-center">
+                <h4>NGswin</h4>
+            </div>
+            <div class="col-sm-3 text-center">
+                <h4>EMT (ours)</h4>
+            </div>
+        </div>
+        <div class="row align-items-center">
+            <div class="col-sm-3">
+                <img src="fig/bsd/108005.png" style="width:100%">
+            </div>
+            <div class="col-sm-3">
+                <video width="100%" playsinline autoplay loop preload muted>
+                    <source src="fig/bsd/Swinir.mp4" type="video/mp4">
+                </video>
+            </div>
+            <div class="col-sm-3">
+                <video width="100%" playsinline autoplay loop preload muted>
+                    <source src="fig/bsd/NGswin.mp4" type="video/mp4">
+                </video>
+            </div>
+            <div class="col-sm-3">
+                <video width="100%" playsinline autoplay loop preload muted>
+                    <source src="fig/bsd/EMT.mp4" type="video/mp4">
+                </video>
+            </div>
+        </div>
+        <hr>
+        <div class="row align-items-center">
+            <div class="col-sm-3">
+                <img src="fig/Mag/H/HighschoolKimengumi_vol20.png" style="width:100%">
+            </div>
+            <div class="col-sm-3">
+                <video width="100%" playsinline autoplay loop preload muted>
+                    <source src="fig/Mag/H/Swinir.mp4" type="video/mp4">
+                </video>
+            </div>
+            <div class="col-sm-3">
+                <video width="100%" playsinline autoplay loop preload muted>
+                    <source src="fig/Mag/H/NGswin.mp4" type="video/mp4">
+                </video>
+            </div>
+            <div class="col-sm-3">
+                <video width="100%" playsinline autoplay loop preload muted>
+                    <source src="fig/Mag/H/EMT.mp4" type="video/mp4">
+                </video>
+            </div>
+        </div>
+        <hr>
+        <div class="row align-items-center">
+            <div class="col-sm-3">
+                <img src="fig/Mag/G/GarakutayaManta.png" style="width:100%">
+            </div>
+            <div class="col-sm-3">
+                <video width="100%" playsinline autoplay loop preload muted>
+                    <source src="fig/Mag/G/Swinir.mp4" type="video/mp4">
+                </video>
+            </div>
+            <div class="col-sm-3">
+                <video width="100%" playsinline autoplay loop preload muted>
+                    <source src="fig/Mag/G/NGswin.mp4" type="video/mp4">
+                </video>
+            </div>
+            <div class="col-sm-3">
+                <video width="100%" playsinline autoplay loop preload muted>
+                    <source src="fig/Mag/G/EMT.mp4" type="video/mp4">
+                </video>
+            </div>
+        </div>
+        <hr>
             <figure class="figure text-center">
-              <img src="fig/fig3.png" class="figure-img rounded img-fluid">
+              <img src="fig/fig3.png" class="figure-img rounded img-fluid" width="100%">
               <figcaption class="figure-caption text-justify">In img_062 and 076 of Urban100, most of the methods failed to recover the grid shape in the images and generated different degrees of artifacts, and EMT relieves this problem and shows clearer super-resolution (SR) results. In BSD100 of 108005 and 78004, other methods produce over-smoothing around local edges and significant blurring of high frequency textures. In the last two subplots, the compared methods struggle to preserve the font structure, while our method shows better performance in font reconstruction. These results demonstrate the effectiveness of our method combining local mechanism and global dependency modelling in SR task.</figcaption>
             </figure>
           </div>
